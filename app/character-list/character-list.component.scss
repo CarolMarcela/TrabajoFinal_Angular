@@ -1,0 +1,59 @@
+.example-card {
+    max-width: 400px;
+  }
+  .pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  
+    button {
+      margin: 0 10px;
+    }
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 columnas */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .example-card {
+    color: #444242ec;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .mat-card-header {
+    display: flex;
+    align-items: center;
+    background-color: #191919e0;
+  
+    .mat-card-title {
+      font-weight: bold;
+    }
+  
+    .mat-card-subtitle {
+      color: #757575;
+    }
+  }
+  
+  .mat-card-content {
+    background-color: #141313ee;
+  
+    p {
+      margin: 0;
+      color: #df1818;
+    }
+  }
+  
+  .mat-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
